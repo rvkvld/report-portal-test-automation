@@ -1,5 +1,5 @@
 api:
   report_portal:
     base_url: http://localhost:8080
-    user_name: user
-    password: pass
+    user_name: default
+    password: 1q2w3e
