@@ -15,7 +15,7 @@ public class LoginPageUITests extends BaseUITest {
     private final String WELCOME = "Welcome,login to your account";
 
     @Test
-    public void shouldLoginReportPortalUiNew() {
+    public void shouldLoginReportPortalUi() {
         page = browser.newPage();
         LoginPage loginPage = new LoginPage(page);
         loginPage.open()
