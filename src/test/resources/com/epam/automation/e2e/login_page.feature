@@ -1,4 +1,5 @@
-Feature: Report Portal login page UI tests
+Feature: Login page
+  Report Portal login page UI tests
 
   Scenario: Authorized user should be able to login
     Given user navigate to login page
