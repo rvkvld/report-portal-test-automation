@@ -10,12 +10,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import com.epam.automation.tests.ui.pages.LoginPage;
 
-public class LoginPage {
+public class LoginPageSteps {
     private final String FILTERS = "Filters";
-    protected static Playwright playwright;
-    protected static Browser browser;
-    protected static Page page;
+    private static Playwright playwright;
+    private static Browser browser;
+    private static Page page;
+    private LoginPage loginPage;
 
     @BeforeAll
     public static void launchBrowser() {
@@ -27,7 +29,6 @@ public class LoginPage {
     public static void closeBrowser() {
         playwright.close();
     }
-    com.epam.automation.tests.ui.pages.LoginPage loginPage;
 
     @Given("^user navigate to login page$")
     public com.epam.automation.tests.ui.pages.LoginPage navigate() {
